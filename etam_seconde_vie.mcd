@@ -1,0 +1,24 @@
+SOUS_CATEGORIE_DE, 0N CATEGORIE, 01 CATEGORIE
+CATEGORIE: id_categorie, libelle_categorie
+APPARTENIR, 0N CATEGORIE, 11 PRODUIT
+COLLECTION: id_collection, nom_collection, saison, annee, eco_concue
+FAIRE_PARTIE, 0N COLLECTION, 11 PRODUIT
+
+MATIERE: id_matiere, nom_matiere, type_fibre, est_recyclee, certification, empreinte_carbone_kg
+COMPOSER, 1N PRODUIT, 0N MATIERE, 0N FOURNISSEUR: pourcentage
+PRODUIT: ref_produit, nom_produit, prix_vente, date_lancement, pays_confection, taux_recyclabilite, score_environnemental
+DECLINER, 1N PRODUIT, _11 VARIANTE
+VARIANTE: num_variante, taille, couleur, code_ean, stock
+
+FOURNISSEUR: id_fournisseur, raison_sociale, pays_fournisseur, email_fournisseur, date_debut_partenariat
+CONCERNER, 0N PRODUIT, 11 COLLECTE
+COLLECTE: id_collecte, date_depot, etat_piece, destination, montant_bon_achat
+CONTENIR, 1N COMMANDE, 0N VARIANTE: quantite, prix_unitaire
+COMMANDE: id_commande, date_commande, canal, statut
+
+MAGASIN: id_magasin, nom_magasin, ville_magasin, type_magasin, date_ouverture
+RECUEILLIR, 0N MAGASIN, 11 COLLECTE
+DEPOSER, 0N CLIENT, 11 COLLECTE
+CLIENT: id_client, nom, prenom, email, telephone, date_naissance, ville, date_inscription, points_fidelite
+PASSER, 0N CLIENT, 11 COMMANDE
+ENREGISTRER, 0N MAGASIN, 01 COMMANDE
