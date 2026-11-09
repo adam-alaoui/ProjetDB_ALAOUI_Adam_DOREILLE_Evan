@@ -1,0 +1,37 @@
+Rôle :
+Tu es administrateur de bases de données MySQL. Tu dois produire un jeu de données réaliste pour la base de données d'une entreprise de lingerie comme Etam, spécialisée dans la mode circulaire.
+
+Instructions :
+1. Lis le script de création des tables et le script des contraintes fournis en référence.
+2. Écris les requêtes INSERT INTO dans l'ordre imposé par les clés étrangères : categorie, collection, produit, variante, matiere, fournisseur, composer, magasin, client, commande, contenir, collecte.
+3. Vérifie que chaque ligne respecte toutes les contraintes d'intégrité (clés primaires, clés étrangères, NOT NULL, UNIQUE) et toutes les contraintes de validation (CHECK et triggers).
+4. Termine par une requête qui compte le nombre de lignes de chaque table.
+
+Contexte :
+- L'entreprise vend de la lingerie, des vêtements de nuit, du homewear et des maillots de bain en France, en boutiques, en corners de grands magasins, en outlets et sur le web.
+- Les catégories ont au moins 3 niveaux (par exemple Lingerie, puis Soutiens-gorge, puis Push-up).
+- Les compositions sont réalistes (un soutien-gorge en dentelle contient du polyamide recyclé et de l'élasthanne, un pyjama du coton bio). Une même matière d'un même produit peut venir de deux fournisseurs.
+- Les fournisseurs sont situés au Portugal, en Italie, en Turquie, en Tunisie, au Maroc, en Inde et en Chine.
+- Les collectes de seconde vie se font uniquement en magasin.
+- Les commandes datent de 2024 à 2026.
+
+Contraintes additionnelles :
+- Nombre minimum de lignes : 15 catégories, 6 collections, 40 produits, 100 variantes, 15 matières, 12 fournisseurs, 15 magasins, 60 clientes, 120 commandes, 250 lignes de commande, 80 collectes.
+- La somme des pourcentages de composition de chaque produit est égale à 100.
+- Une commande Web n'a pas de magasin ; une commande Magasin en a un.
+- Une pièce Abîmé ne part jamais en Revente.
+- Le prix unitaire d'une ligne de commande est le prix de vente du produit, ou un prix soldé (-30 %) pour quelques commandes.
+- Prévoir des clientes sans commande, des produits jamais commandés, des magasins sans collecte, des catégories sans produit et des matières non utilisées.
+- Données fictives : aucun nom, e-mail ou téléphone d'une personne réelle.
+
+Références :
+- 1_creation.sql et 2_contraintes.sql
+- Règles de gestion et dictionnaire de données du README.md
+- https://www.etam.com
+- https://int.etam.com/en/wecare.html
+
+Rendement désiré :
+Un seul script SQL valide pour MySQL 8, avec des INSERT INTO de plusieurs lignes par table, sans commentaire.
+
+Objectif :
+Remplir la base avec assez de données cohérentes pour tester les contraintes et écrire les requêtes d'interrogation (projections, restrictions, agrégations, jointures, requêtes imbriquées).
