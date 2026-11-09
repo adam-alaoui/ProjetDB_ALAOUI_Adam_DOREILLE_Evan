@@ -1,4 +1,4 @@
-# Etam Seconde Vie — Mini-projet Bases de données (TI503N)
+# Etam Seconde Vie — Mini-projet Bases de données
 
 ## 1. Analyse des besoins
 
@@ -8,7 +8,7 @@ Nous avons choisi la mode circulaire appliquée à une entreprise réelle : Etam
 
 ### 1.2 Prompt utilisé
 
-Le prompt complet est dans [`prompts/1_prompt_analyse_besoins.txt`](prompts/1_prompt_analyse_besoins-2.txt). Il reprend mot pour mot la base de prompt fournie : nous avons complété les parties entre crochets et ajouté quelques éléments (un paragraphe de contexte, des précisions sur la forme des règles de gestion et sur le tableau). Correspondance avec le framework RICARDO :
+Le prompt complet est dans [`prompts/1_prompt_analyse_besoins_2.txt`](prompts/1_prompt_analyse_besoins-2.txt). Il reprend mot pour mot la base de prompt fournie : nous avons complété les parties entre crochets et ajouté quelques éléments (un paragraphe de contexte, des précisions sur la forme des règles de gestion et sur le tableau). Correspondance avec le framework RICARDO :
 
 | Lettre | Où dans le prompt |
 |---|---|
