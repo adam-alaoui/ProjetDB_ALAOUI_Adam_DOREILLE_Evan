@@ -131,9 +131,9 @@ Collecte seconde vie
 
 ## 2. MCD
 
-Fichier source : [`mcd/etam_seconde_vie.mcd`](mcd/etam_seconde_vie.mcd)
+Fichier source : [`mcd/etam_seconde_vie.mcd`](mcd.png)
 
-![MCD Etam Seconde Vie](mcd/mcd.png)
+![MCD Etam Seconde Vie](mcd.png)
 
 Éléments de modélisation avancée :
 
